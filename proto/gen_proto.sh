@@ -14,6 +14,14 @@
 
 #! /bin/bash
 
+# If proto files are already present in proto_files directory then generate code based on them
+if [ -f "proto/proto_files/act_template.proto" ] || 
+   [ -f "proto/proto_files/check1.proto" ] ||
+   [ -f "proto/proto_files/th2_grpc_common.proto" ]; then
+    protoc --go_out=. proto/proto_files/*.proto
+    exit
+fi
+
 # Changing GOPATH
 export TEMP_PATH=$GOPATH
 export GOPATH=$PWD/dependencies
@@ -25,7 +33,7 @@ go get github.com/th2-net/th2-grpc-act-template
 
 # Moving proto files from dependencies directory to proto/proto_files directory
 mkdir proto/proto_files
-mv dependencies/pkg/mod/github.com/th2-net/**/src/main/proto/**/*.proto proto/proto_files
+cp dependencies/pkg/mod/github.com/th2-net/**/src/main/proto/**/*.proto proto/proto_files
 mkdir proto/proto_files/th2_grpc_common
 mv proto/proto_files/common.proto proto/proto_files/th2_grpc_common/common.proto
 

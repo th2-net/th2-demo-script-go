@@ -1,0 +1,6 @@
+github.com/th2-net/th2-grpc-act-template v0.0.0-20220527094308-f46df812cf5d h1:xy2U8MCfMsbS/Kiy5hQRnoZDtA6RCo57GhzD3nC47qQ=
+github.com/th2-net/th2-grpc-act-template v0.0.0-20220527094308-f46df812cf5d/go.mod h1:tR15HWVKYmpu/94wNAjZe8QAMhXeVhujmMJaZXoow8s=
+github.com/th2-net/th2-grpc-check1 v3.5.1+incompatible h1:dVMnzafBYPg4zVD5qEwp37ZAB4BvjLBvL1sOA3mBXUQ=
+github.com/th2-net/th2-grpc-check1 v3.5.1+incompatible/go.mod h1:bqbpKkVS4KB8mC67u8bJtYf8G3LQ68QQcsRyZnobNEI=
+github.com/th2-net/th2-grpc-common v0.0.0-20221031111658-9bca8902d898 h1:5uB4fyS7nV+Vu+ggADwhVXGBWIG/jhZXNvSUe0JOOEk=
+github.com/th2-net/th2-grpc-common v0.0.0-20221031111658-9bca8902d898/go.mod h1:WiSMBNNRWvTHgcRQCyW2tm0cw8RYtqhI88BOvnhfp/0=
