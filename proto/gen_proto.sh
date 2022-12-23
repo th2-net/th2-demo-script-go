@@ -35,26 +35,29 @@ go get github.com/th2-net/th2-grpc-act-template
 # Moving proto files from dependencies directory to proto directory
 cp dependencies/pkg/mod/github.com/th2-net/**/src/main/proto/**/*.proto proto
 
+# Move common proto to its directory
+mkdir th2_grpc_common
+mv proto/common.proto th2_grpc_common
+
 # TEMPORARY - Adding approriate import paths and output paths
-sed -i '26 i option go_package = "/proto";' proto/common.proto
-sed -i '23d' proto/common.proto
-sed -i '23d' proto/common.proto
+sed -i '26 i option go_package = "/proto";' th2_grpc_common/common.proto
 
 sed -i '20d' proto/act_template.proto
 sed -i '20 i option go_package = "/proto";' proto/act_template.proto
 sed -i '19d' proto/act_template.proto
-sed -i '19 i import "proto/common.proto";' proto/act_template.proto
+sed -i '19 i import "th2_grpc_common/common.proto";' proto/act_template.proto
 
 sed -i '24d' proto/check1.proto
 sed -i '24 i option go_package = "/proto";' proto/check1.proto
 sed -i '20d' proto/check1.proto
-sed -i '20 i import "proto/common.proto";' proto/check1.proto
+sed -i '20 i import "th2_grpc_common/common.proto";' proto/check1.proto
 
 # Generating go code from proto files
 protoc --go_out=. proto/*.proto
 
-# Deleting proto files from proto directory
+# Deleting proto files from proto directory and th2_grpc_common
 rm -f proto/*.proto
+rm -r -f th2_grpc_common
 
 # Changing the GOPATH back
 export GOPATH=TEMP_PATH
