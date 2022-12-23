@@ -53,7 +53,7 @@ sed -i '20d' proto/check1.proto
 sed -i '20 i import "th2_grpc_common/common.proto";' proto/check1.proto
 
 # Generating go code from proto files
-protoc --go_out=. proto/*.proto
+protoc --go_out=. **/*.proto
 
 # Deleting proto files from proto directory and th2_grpc_common
 rm -f proto/*.proto
