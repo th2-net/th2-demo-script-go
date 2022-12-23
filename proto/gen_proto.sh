@@ -14,16 +14,17 @@
 
 #! /bin/bash
 
-# If proto files are already present in proto_files directory then generate code based on them
-if [ -f "proto/proto_files/act_template.proto" ] || 
-   [ -f "proto/proto_files/check1.proto" ] ||
-   [ -f "proto/proto_files/th2_grpc_common.proto" ]; then
-    protoc --go_out=. proto/proto_files/*.proto
+# If proto files are already present in proto directory then generate code based on them
+if [ -f "proto/act_template.proto" ] || 
+   [ -f "proto/check1.proto" ] ||
+   [ -f "proto/th2_grpc_common.proto" ]; then
+    protoc --go_out=. proto/*.proto
+    rm -f proto/*.proto
     exit
 fi
 
 # Changing GOPATH
-export TEMP_PATH=$GOPATH
+TEMP_PATH=$GOPATH
 export GOPATH=$PWD/dependencies
 
 # Downloading required proto file dependencies: th2-grpc-common, th2-grpc-check1, th2-grpc-act-template
@@ -31,30 +32,29 @@ go get github.com/th2-net/th2-grpc-common
 go get github.com/th2-net/th2-grpc-check1
 go get github.com/th2-net/th2-grpc-act-template
 
-# Moving proto files from dependencies directory to proto/proto_files directory
-mkdir proto/proto_files
-cp dependencies/pkg/mod/github.com/th2-net/**/src/main/proto/**/*.proto proto/proto_files
-mkdir proto/proto_files/th2_grpc_common
-mv proto/proto_files/common.proto proto/proto_files/th2_grpc_common/common.proto
+# Moving proto files from dependencies directory to proto directory
+cp dependencies/pkg/mod/github.com/th2-net/**/src/main/proto/**/*.proto proto
 
 # TEMPORARY - Adding approriate import paths and output paths
-sed -i '26 i option go_package = "/proto/proto_files/th2_grpc_common";' proto/proto_files/th2_grpc_common/common.proto
-sed -i '23d' proto/proto_files/th2_grpc_common/common.proto
-sed -i '23d' proto/proto_files/th2_grpc_common/common.proto
+sed -i '26 i option go_package = "/proto";' proto/common.proto
+sed -i '23d' proto/common.proto
+sed -i '23d' proto/common.proto
 
-sed -i '20d' proto/proto_files/act_template.proto
-sed -i '20 i option go_package = "/proto";' proto/proto_files/act_template.proto
-sed -i '19d' proto/proto_files/act_template.proto
-sed -i '19 i import "proto/proto_files/th2_grpc_common/common.proto";' proto/proto_files/act_template.proto
+sed -i '20d' proto/act_template.proto
+sed -i '20 i option go_package = "/proto";' proto/act_template.proto
+sed -i '19d' proto/act_template.proto
+sed -i '19 i import "proto/common.proto";' proto/act_template.proto
 
-sed -i '24d' proto/proto_files/check1.proto
-sed -i '24 i option go_package = "/proto";' proto/proto_files/check1.proto
-sed -i '20d' proto/proto_files/check1.proto
-sed -i '20 i import "proto/proto_files/th2_grpc_common/common.proto";' proto/proto_files/check1.proto
+sed -i '24d' proto/check1.proto
+sed -i '24 i option go_package = "/proto";' proto/check1.proto
+sed -i '20d' proto/check1.proto
+sed -i '20 i import "proto/common.proto";' proto/check1.proto
 
 # Generating go code from proto files
-protoc --go_out=. proto/proto_files/*.proto
+protoc --go_out=. proto/*.proto
+
+# Deleting proto files from proto directory
+rm -f proto/*.proto
 
 # Changing the GOPATH back
 export GOPATH=TEMP_PATH
-unset TEMP_PATH
