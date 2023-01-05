@@ -1,0 +1,14 @@
+.idea
+
+.git
+
+.gradle
+build
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+dist
+*egg-info
