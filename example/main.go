@@ -4,18 +4,17 @@ import (
 	"context"
 	"fmt"
 	"github.com/google/uuid"
-	common_proto "github.com/th2-net/th2-common-go/proto"
-	common_f "github.com/th2-net/th2-common-go/schema/factory"
+	commonFactory "github.com/th2-net/th2-common-go/schema/factory"
 	"github.com/th2-net/th2-common-go/schema/modules/grpcModule"
 	"github.com/th2-net/th2-common-go/schema/modules/mqModule"
-	"github.com/th2-net/th2-demo-script-go.git/act"
-	"github.com/th2-net/th2-demo-script-go.git/check1"
-	"github.com/th2-net/th2-demo-script-go.git/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"log"
 	"math/rand"
 	"reflect"
 	"strconv"
+	act "th2-grpc/th2_grpc_act_template"
+	check1 "th2-grpc/th2_grpc_check1"
+	common_proto "th2-grpc/th2_grpc_common"
 	"time"
 )
 
@@ -40,7 +39,7 @@ func genrateSecondaryRandomClordID(n int) string {
 
 func main() {
 	// 1) Initialize NewFactory instance and register modules for grpc and mq .
-	factory := common_f.NewFactory()
+	factory := commonFactory.NewFactory()
 	if err := factory.Register(mqModule.NewRabbitMQModule); err != nil {
 		panic(err)
 	}
@@ -77,17 +76,16 @@ func main() {
 
 	// 4) Create root Event for report.
 
-	current_timestamp := timestamppb.Now()
-	log.Printf("current time: %v \n", current_timestamp)
+	currentTimestamp := timestamppb.Now()
+	log.Printf("current time: %v \n", currentTimestamp)
 
 	eventID := common_proto.EventID{Id: uuid.New().String()}
 	event := common_proto.Event{
 		Id:             &eventID,
 		Name:           "Raw send example",
 		Status:         common_proto.EventStatus_SUCCESS,
-		StartTimestamp: current_timestamp,
+		StartTimestamp: currentTimestamp,
 	}
-	fmt.Println(current_timestamp)
 
 	// 5) Add this Event to EventBatch.
 	eventBatch := common_proto.EventBatch{Events: []*common_proto.Event{&event}}
@@ -166,7 +164,7 @@ func main() {
 	log.Printf("order sent. response: %s", resp)
 	// 10) Create MessageFilter object - mask or pattern of message verification.
 
-	message_filter := common_proto.MessageFilter{
+	messageFilter := common_proto.MessageFilter{
 		MessageType: "ExecutionReport",
 		Fields: map[string]*common_proto.ValueFilter{
 			"ClOrdID":   {Kind: &common_proto.ValueFilter_SimpleFilter{SimpleFilter: clordid}, Key: true},
@@ -177,22 +175,18 @@ func main() {
 		},
 	}
 	// 11) Create instance of CheckRuleRequest class - grpc message object which used for calls to the check1.
-	check1_request := proto.CheckRuleRequest{
-		ConnectivityId: &proto.ConnectionID{SessionAlias: "demo-conn1"},
-		//filter = message_filter,
-		//Checkpoint: response.checkpointId,
-		Kind: &proto.CheckRuleRequest_Filter{Filter: &message_filter},
-
-		//Kind: &proto.CheckRuleRequest_Filter{Filter: &message_filter},
-		//Kind:          common_proto.MessageFilter{message_filter},
-		Checkpoint:    resp.CheckpointId,
-		Timeout:       3000,
-		ParentEventId: &eventID,
-		Description:   "User receives the ExecutionReport message.",
+	check1_request := check1.CheckRuleRequest{
+		ConnectivityId: &common_proto.ConnectionID{SessionAlias: "demo-conn1"},
+		Kind:           &check1.CheckRuleRequest_Filter{Filter: &messageFilter},
+		Checkpoint:     resp.CheckpointId,
+		Timeout:        3000,
+		ParentEventId:  &eventID,
+		Description:    "User receives the ExecutionReport message.",
 	}
 
 	// 12) Call method submitCheckRule from the check1 interface.
-	check1_response, checkErr := check.SubmitCheckRule(check1_request)
+	ctx := context.Background() // maybe need correction
+	check1_response, checkErr := check.SubmitCheckRule(ctx, &check1_request)
 	if checkErr != nil {
 		log.Fatal(checkErr)
 	}

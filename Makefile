@@ -1,4 +1,4 @@
-TARGET_DIR?=$(shell pwd)
+ TARGET_DIR?=$(shell pwd)
 PROTO_DIR=proto
 SRC_MAIN_PROTO_DIR=src/main/proto
 GITHUB_GROUP=github.com/th2-net

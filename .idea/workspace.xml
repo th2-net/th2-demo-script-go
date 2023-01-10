@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2633d228-05b0-4fbd-b6dd-2090f93f1715" name="Changes" comment="" />
+    <list default="true" id="5da72fc6-c310-41d7-8221-d8abf214a388" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/act/act.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/act/act_grpc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check1/check1.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check1/check1_grpc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/act_template.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/check1.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/common.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/gen_proto.sh" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +31,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2K9HhkO5a01BxWL7AwJA3phSg7D" />
+  <component name="ProjectId" id="2K9bXVJqqwsLppsy0BzPWR3Z0Fc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,6 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
@@ -33,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/Tekle/Desktop/BLOCKCHAIN/th2-demo-script-go"
+    "last_opened_file_path": "C:/Users/Tekle/Desktop/New folder/th2-demo-script-go"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
