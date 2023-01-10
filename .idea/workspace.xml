@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b869a07d-66fb-4d66-a61f-46955325ac97" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check1/check1.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/grpc.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/grpc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/rabbitmq.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/rabbitmq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routermq.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/routermq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/grpc_client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/grpc_server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/mq_main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/proto/act.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/proto/act.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/proto/act_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/act/act_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-    </list>
+    <list default="true" id="2633d228-05b0-4fbd-b6dd-2090f93f1715" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +17,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2K9Ac6dELYm40wviCLrhBjLXJle" />
+  <component name="ProjectId" id="2K9HhkO5a01BxWL7AwJA3phSg7D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,7 +26,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
@@ -52,13 +36,6 @@
     "last_opened_file_path": "C:/Users/Tekle/Desktop/BLOCKCHAIN/th2-demo-script-go"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Tekle\Desktop\BLOCKCHAIN\th2-demo-script-go\act" />
-      <recent name="C:\Users\Tekle\Desktop\BLOCKCHAIN\th2-demo-script-go\check1" />
-      <recent name="C:\Users\Tekle\Desktop\BLOCKCHAIN\th2-demo-script-go\proto" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />

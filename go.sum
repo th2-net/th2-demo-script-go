@@ -44,7 +44,15 @@ github.com/th2-net/th2-common-go v0.0.0-20230109101946-a89344a5bc7f h1:PL+LJ2IST
 github.com/th2-net/th2-common-go v0.0.0-20230109101946-a89344a5bc7f/go.mod h1:PQPrfC98qd5ri+3axbjLS/0ZgQ0dMbBo+VzoeSWmG6s=
 github.com/th2-net/th2-grpc-act-template v0.0.0-20230110173420-aeaf6a247a91 h1:hbo7mXfGtYUs9acTM6sgcx07b0J/CJghUzZVO79lbjo=
 github.com/th2-net/th2-grpc-act-template v0.0.0-20230110173420-aeaf6a247a91/go.mod h1:tR15HWVKYmpu/94wNAjZe8QAMhXeVhujmMJaZXoow8s=
+<<<<<<< HEAD
 github.com/th2-net/th2-grpc-check1 v3.5.2-0.20230110170449-a2ea53817c72+incompatible/go.mod h1:bqbpKkVS4KB8mC67u8bJtYf8G3LQ68QQcsRyZnobNEI=
+=======
+github.com/th2-net/th2-grpc-check1 v3.5.2-0.20230110170449-a2ea53817c72+incompatible h1:t9Dr3ufEtnHbPfIVCVj1FFOVyxt3+uO3GdidRff/lO8=
+github.com/th2-net/th2-grpc-check1 v3.5.2-0.20230110170449-a2ea53817c72+incompatible/go.mod h1:bqbpKkVS4KB8mC67u8bJtYf8G3LQ68QQcsRyZnobNEI=
+github.com/th2-net/th2-grpc-common v0.0.0-20230110163630-4dc14fed2739 h1:zzeTKKkO7CEHMZe66XgpGWyNTI7Gvv6+hRaNVIC1nss=
+github.com/th2-net/th2-grpc-common v0.0.0-20230110163630-4dc14fed2739/go.mod h1:WiSMBNNRWvTHgcRQCyW2tm0cw8RYtqhI88BOvnhfp/0=
+github.com/th2-net/th2-grpc-common v0.0.0-20230110172250-f653e1acb2db h1:Q/SXRcJkXF7GPMdl4Yi420cKp6iItZVl5ntqHBDI3bo=
+>>>>>>> origin/makefile
 github.com/th2-net/th2-grpc-common v0.0.0-20230110172250-f653e1acb2db/go.mod h1:WiSMBNNRWvTHgcRQCyW2tm0cw8RYtqhI88BOvnhfp/0=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/exp v0.0.0-20190121172915-509febef88a4/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=
