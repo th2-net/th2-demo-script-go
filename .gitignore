@@ -13,3 +13,8 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+go.work
+go.work.sum
+proto/
+th2-grpc/
