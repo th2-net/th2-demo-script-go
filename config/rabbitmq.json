@@ -1,8 +1,8 @@
 {
-  "host":"localhost",
-  "vHost": "new_host",
-  "port": "5672",
-  "username": "irving",
-  "password": "pass",
-  "exchangeName": "mq_ex"
+  "host":"10.119.0.9",
+  "vHost": "th2-go-playground",
+  "port": "32000",
+  "username": "th2-user-go-playground",
+  "password": "Kb9EuDeZqJQ7h9IPjd60dRJh",
+  "exchangeName": "th2-exchange"
 }

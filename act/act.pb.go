@@ -19,7 +19,7 @@
 // 	protoc        v3.21.9
 // source: grpc/proto/act.proto
 
-package __
+package act
 
 import (
 	proto "github.com/th2-net/th2-common-go/proto"

@@ -4,7 +4,7 @@
 // - protoc             v3.21.9
 // source: grpc/proto/act.proto
 
-package __
+package act
 
 import (
 	context "context"
@@ -28,16 +28,16 @@ type ActClient interface {
 	// 3) Waits Execution Report or Business Message Reject with the same ClOrdID as in passed message
 	// from Connectivity microservice
 	// 4) Returns the message repose and the Checkpoint
-	PlaceOrderFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
-	PlaceCancelFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
+	PlaceOrderFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
+	PlaceCancelFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
 	// Send fix message without response awaiting
-	SendMessage(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*SendMessageResponse, error)
-	PlaceQuoteRequestFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
-	PlaceQuoteFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
-	PlaceOrderMassCancelRequestFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
-	PlaceQuoteCancelFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
-	PlaceQuoteResponseFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
-	PlaceSecurityStatusRequest(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error)
+	SendMessage(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.SendMessageResponse, error)
+	PlaceQuoteRequestFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
+	PlaceQuoteFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
+	PlaceOrderMassCancelRequestFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
+	PlaceQuoteCancelFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
+	PlaceQuoteResponseFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
+	PlaceSecurityStatusRequest(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error)
 }
 
 type actClient struct {
@@ -48,8 +48,8 @@ func NewActClient(cc grpc.ClientConnInterface) ActClient {
 	return &actClient{cc}
 }
 
-func (c *actClient) PlaceOrderFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceOrderFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeOrderFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -57,8 +57,8 @@ func (c *actClient) PlaceOrderFIX(ctx context.Context, in *PlaceMessageRequest, 
 	return out, nil
 }
 
-func (c *actClient) PlaceCancelFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceCancelFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeCancelFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -66,8 +66,8 @@ func (c *actClient) PlaceCancelFIX(ctx context.Context, in *PlaceMessageRequest,
 	return out, nil
 }
 
-func (c *actClient) SendMessage(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*SendMessageResponse, error) {
-	out := new(SendMessageResponse)
+func (c *actClient) SendMessage(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.SendMessageResponse, error) {
+	out := new(__.SendMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/sendMessage", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -75,8 +75,8 @@ func (c *actClient) SendMessage(ctx context.Context, in *PlaceMessageRequest, op
 	return out, nil
 }
 
-func (c *actClient) PlaceQuoteRequestFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceQuoteRequestFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeQuoteRequestFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -84,8 +84,8 @@ func (c *actClient) PlaceQuoteRequestFIX(ctx context.Context, in *PlaceMessageRe
 	return out, nil
 }
 
-func (c *actClient) PlaceQuoteFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceQuoteFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeQuoteFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -93,8 +93,8 @@ func (c *actClient) PlaceQuoteFIX(ctx context.Context, in *PlaceMessageRequest, 
 	return out, nil
 }
 
-func (c *actClient) PlaceOrderMassCancelRequestFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceOrderMassCancelRequestFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeOrderMassCancelRequestFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -102,8 +102,8 @@ func (c *actClient) PlaceOrderMassCancelRequestFIX(ctx context.Context, in *Plac
 	return out, nil
 }
 
-func (c *actClient) PlaceQuoteCancelFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceQuoteCancelFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeQuoteCancelFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -111,8 +111,8 @@ func (c *actClient) PlaceQuoteCancelFIX(ctx context.Context, in *PlaceMessageReq
 	return out, nil
 }
 
-func (c *actClient) PlaceQuoteResponseFIX(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceQuoteResponseFIX(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeQuoteResponseFIX", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -120,8 +120,8 @@ func (c *actClient) PlaceQuoteResponseFIX(ctx context.Context, in *PlaceMessageR
 	return out, nil
 }
 
-func (c *actClient) PlaceSecurityStatusRequest(ctx context.Context, in *PlaceMessageRequest, opts ...grpc.CallOption) (*PlaceMessageResponse, error) {
-	out := new(PlaceMessageResponse)
+func (c *actClient) PlaceSecurityStatusRequest(ctx context.Context, in *__.PlaceMessageRequest, opts ...grpc.CallOption) (*__.PlaceMessageResponse, error) {
+	out := new(__.PlaceMessageResponse)
 	err := c.cc.Invoke(ctx, "/Act/placeSecurityStatusRequest", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -139,16 +139,16 @@ type ActServer interface {
 	// 3) Waits Execution Report or Business Message Reject with the same ClOrdID as in passed message
 	// from Connectivity microservice
 	// 4) Returns the message repose and the Checkpoint
-	PlaceOrderFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
-	PlaceCancelFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
+	PlaceOrderFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
+	PlaceCancelFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
 	// Send fix message without response awaiting
-	SendMessage(context.Context, *PlaceMessageRequest) (*SendMessageResponse, error)
-	PlaceQuoteRequestFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
-	PlaceQuoteFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
-	PlaceOrderMassCancelRequestFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
-	PlaceQuoteCancelFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
-	PlaceQuoteResponseFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
-	PlaceSecurityStatusRequest(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error)
+	SendMessage(context.Context, *__.PlaceMessageRequest) (*__.SendMessageResponse, error)
+	PlaceQuoteRequestFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
+	PlaceQuoteFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
+	PlaceOrderMassCancelRequestFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
+	PlaceQuoteCancelFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
+	PlaceQuoteResponseFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
+	PlaceSecurityStatusRequest(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error)
 	mustEmbedUnimplementedActServer()
 }
 
@@ -156,31 +156,31 @@ type ActServer interface {
 type UnimplementedActServer struct {
 }
 
-func (UnimplementedActServer) PlaceOrderFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceOrderFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceOrderFIX not implemented")
 }
-func (UnimplementedActServer) PlaceCancelFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceCancelFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceCancelFIX not implemented")
 }
-func (UnimplementedActServer) SendMessage(context.Context, *PlaceMessageRequest) (*SendMessageResponse, error) {
+func (UnimplementedActServer) SendMessage(context.Context, *__.PlaceMessageRequest) (*__.SendMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SendMessage not implemented")
 }
-func (UnimplementedActServer) PlaceQuoteRequestFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceQuoteRequestFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceQuoteRequestFIX not implemented")
 }
-func (UnimplementedActServer) PlaceQuoteFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceQuoteFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceQuoteFIX not implemented")
 }
-func (UnimplementedActServer) PlaceOrderMassCancelRequestFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceOrderMassCancelRequestFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceOrderMassCancelRequestFIX not implemented")
 }
-func (UnimplementedActServer) PlaceQuoteCancelFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceQuoteCancelFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceQuoteCancelFIX not implemented")
 }
-func (UnimplementedActServer) PlaceQuoteResponseFIX(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceQuoteResponseFIX(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceQuoteResponseFIX not implemented")
 }
-func (UnimplementedActServer) PlaceSecurityStatusRequest(context.Context, *PlaceMessageRequest) (*PlaceMessageResponse, error) {
+func (UnimplementedActServer) PlaceSecurityStatusRequest(context.Context, *__.PlaceMessageRequest) (*__.PlaceMessageResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlaceSecurityStatusRequest not implemented")
 }
 func (UnimplementedActServer) mustEmbedUnimplementedActServer() {}
@@ -197,7 +197,7 @@ func RegisterActServer(s grpc.ServiceRegistrar, srv ActServer) {
 }
 
 func _Act_PlaceOrderFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -209,13 +209,13 @@ func _Act_PlaceOrderFIX_Handler(srv interface{}, ctx context.Context, dec func(i
 		FullMethod: "/Act/placeOrderFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceOrderFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceOrderFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceCancelFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -227,13 +227,13 @@ func _Act_PlaceCancelFIX_Handler(srv interface{}, ctx context.Context, dec func(
 		FullMethod: "/Act/placeCancelFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceCancelFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceCancelFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_SendMessage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -245,13 +245,13 @@ func _Act_SendMessage_Handler(srv interface{}, ctx context.Context, dec func(int
 		FullMethod: "/Act/sendMessage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).SendMessage(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).SendMessage(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceQuoteRequestFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -263,13 +263,13 @@ func _Act_PlaceQuoteRequestFIX_Handler(srv interface{}, ctx context.Context, dec
 		FullMethod: "/Act/placeQuoteRequestFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceQuoteRequestFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceQuoteRequestFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceQuoteFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -281,13 +281,13 @@ func _Act_PlaceQuoteFIX_Handler(srv interface{}, ctx context.Context, dec func(i
 		FullMethod: "/Act/placeQuoteFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceQuoteFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceQuoteFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceOrderMassCancelRequestFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -299,13 +299,13 @@ func _Act_PlaceOrderMassCancelRequestFIX_Handler(srv interface{}, ctx context.Co
 		FullMethod: "/Act/placeOrderMassCancelRequestFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceOrderMassCancelRequestFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceOrderMassCancelRequestFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceQuoteCancelFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -317,13 +317,13 @@ func _Act_PlaceQuoteCancelFIX_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/Act/placeQuoteCancelFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceQuoteCancelFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceQuoteCancelFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceQuoteResponseFIX_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -335,13 +335,13 @@ func _Act_PlaceQuoteResponseFIX_Handler(srv interface{}, ctx context.Context, de
 		FullMethod: "/Act/placeQuoteResponseFIX",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceQuoteResponseFIX(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceQuoteResponseFIX(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Act_PlaceSecurityStatusRequest_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PlaceMessageRequest)
+	in := new(__.PlaceMessageRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -353,7 +353,7 @@ func _Act_PlaceSecurityStatusRequest_Handler(srv interface{}, ctx context.Contex
 		FullMethod: "/Act/placeSecurityStatusRequest",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ActServer).PlaceSecurityStatusRequest(ctx, req.(*PlaceMessageRequest))
+		return srv.(ActServer).PlaceSecurityStatusRequest(ctx, req.(*__.PlaceMessageRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }

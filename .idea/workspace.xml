@@ -4,125 +4,26 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af5623a2-7e5c-4a51-9444-f3fdfd1524bc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-act-template/@v/list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-act-template/@v/v0.0.0-20220527094308-f46df812cf5d.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-act-template/@v/v0.0.0-20220527094308-f46df812cf5d.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-act-template/@v/v0.0.0-20220527094308-f46df812cf5d.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-act-template/@v/v0.0.0-20220527094308-f46df812cf5d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-act-template/@v/v0.0.0-20220527094308-f46df812cf5d.ziphash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-check1/@v/list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-check1/@v/v3.5.1+incompatible.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-check1/@v/v3.5.1+incompatible.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-check1/@v/v3.5.1+incompatible.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-check1/@v/v3.5.1+incompatible.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-check1/@v/v3.5.1+incompatible.ziphash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-common/@v/list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-common/@v/v0.0.0-20221031111658-9bca8902d898.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-common/@v/v0.0.0-20221031111658-9bca8902d898.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-common/@v/v0.0.0-20221031111658-9bca8902d898.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-common/@v/v0.0.0-20221031111658-9bca8902d898.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/github.com/th2-net/th2-grpc-common/@v/v0.0.0-20221031111658-9bca8902d898.ziphash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/lookup/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/lookup/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/lookup/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/x056/401" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/x056/455" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/x057/254.p/46" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/x057/254.p/51" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/x057/254.p/53" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/1/220" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/1/223.p/166" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/2/000.p/223" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/cache/lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.github/workflows/ci-unwelcome-words.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.github/workflows/dev-grpc-services-pypi-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.github/workflows/dev-java-publish-sonatype.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.github/workflows/grpc-services-pypi-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.github/workflows/java-publish-sonatype.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/.gitlab-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/package_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-act-template@v0.0.0-20220527094308-f46df812cf5d/src/main/proto/th2_grpc_act_template/act_template.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.github/workflows/ci-unwelcome-words.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.github/workflows/dev-grpc-services-pypi-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.github/workflows/dev-java-publish-sonatype.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.github/workflows/grpc-services-pypi-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.github/workflows/java-publish-sonatype.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/.gitlab-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/package_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-check1@v3.5.1+incompatible/src/main/proto/th2_grpc_check1/check1.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.github/workflows/ci-unwelcome-words.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.github/workflows/dev-grpc-services-pypi-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.github/workflows/dev-java-publish-sonatype.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.github/workflows/grpc-services-pypi-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.github/workflows/java-publish-sonatype.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/.gitlab-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/package_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/mod/github.com/th2-net/th2-grpc-common@v0.0.0-20221031111658-9bca8902d898/src/main/proto/th2_grpc_common/common.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pkg/sumdb/sum.golang.org/latest" beforeDir="false" />
+    <list default="true" id="b869a07d-66fb-4d66-a61f-46955325ac97" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check1/check1.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/grpc.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/grpc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/rabbitmq.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/rabbitmq.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routermq.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/routermq.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/grpc_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/examples/grpc_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/grpc_server.go" beforeDir="false" afterPath="$PROJECT_DIR$/examples/grpc_server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/mq_main.go" beforeDir="false" afterPath="$PROJECT_DIR$/examples/mq_main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/grpc_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/grpc_server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/mq_main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/proto/act.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/proto/act.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/proto/act_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/act/act_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../Program Files/Go" />
   <component name="Git.Settings">
@@ -131,59 +32,32 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JtuEwZrzZw2ZHvy0GAsdtg7rUz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2K9Ac6dELYm40wviCLrhBjLXJle" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tekle/Desktop/WORK/th2-common-go&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/Tekle/Desktop/BLOCKCHAIN/th2-demo-script-go"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tekle\Desktop\WORK\th2-demo-script-go\var\th2\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Tekle\Desktop\WORK\th2-demo-script-go\examples" />
-      <recent name="C:\Users\Tekle\Desktop\WORK\th2-demo-script-go" />
-      <recent name="C:\Users\Tekle\Desktop\WORK\th2-demo-script-go\example" />
-      <recent name="C:\Users\Tekle\Desktop\WORK\th2-demo-script-go\ehl\eh" />
-      <recent name="C:\Users\Tekle\Desktop\WORK\th2-demo-script-go\ehl" />
+      <recent name="C:\Users\Tekle\Desktop\BLOCKCHAIN\th2-demo-script-go\act" />
+      <recent name="C:\Users\Tekle\Desktop\BLOCKCHAIN\th2-demo-script-go\check1" />
+      <recent name="C:\Users\Tekle\Desktop\BLOCKCHAIN\th2-demo-script-go\proto" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="th2-demo-script-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="th2-demo-script-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
