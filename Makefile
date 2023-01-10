@@ -4,10 +4,13 @@ SRC_MAIN_PROTO_DIR=src/main/proto
 GITHUB_GROUP=github.com/th2-net
 
 TH2_GRPC_COMMON=th2-grpc-common
-TH2_GRPC_COMMON_URL=$(GITHUB_GROUP)/$(TH2_GRPC_COMMON)@f653e1acb2db7ccff68e73596b8d32bf7225eb2c
+TH2_GRPC_COMMON_URL=$(GITHUB_GROUP)/$(TH2_GRPC_COMMON)@makefile
 
 TH2_GRPC_CHECK1=th2-grpc-check1
 TH2_GRPC_CHECK1_URL=$(GITHUB_GROUP)/$(TH2_GRPC_CHECK1)@makefile
+
+TH2_GRPC_ACT_TEMPLATE=th2-grpc-act-template
+TH2_GRPC_ACT_TEMPLATE_URL=$(GITHUB_GROUP)/$(TH2_GRPC_ACT_TEMPLATE)@makefile
 
 MODULE_NAME=th2-grpc
 MODULE_DIR=$(TARGET_DIR)/$(MODULE_NAME)
@@ -24,10 +27,13 @@ prepare-dependencies: clean-dependencies
 
 	go get -u -t $(TH2_GRPC_COMMON_URL)
 	go get -u -t $(TH2_GRPC_CHECK1_URL)
+	go get -u -t $(TH2_GRPC_ACT_TEMPLATE_URL)
 	sleep 1
 	cp -r --no-preserve=mode,ownership $(shell go list -m -f '{{.Dir}}' $(TH2_GRPC_COMMON_URL))/$(SRC_MAIN_PROTO_DIR)/* $(PROTO_DIR)
 	sleep 1
 	cp -r --no-preserve=mode,ownership $(shell go list -m -f '{{.Dir}}' $(TH2_GRPC_CHECK1_URL))/$(SRC_MAIN_PROTO_DIR)/* $(PROTO_DIR)
+	sleep 1
+	cp -r --no-preserve=mode,ownership $(shell go list -m -f '{{.Dir}}' $(TH2_GRPC_ACT_TEMPLATE_URL))/$(SRC_MAIN_PROTO_DIR)/* $(PROTO_DIR)
 
 clean-module:
 	-rm -rf $(MODULE_DIR)
