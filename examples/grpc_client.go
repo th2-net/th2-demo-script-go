@@ -2,23 +2,24 @@ package main
 
 import (
 	"context"
-	ac "exactpro/th2/example/proto"
-	"github.com/th2-net/th2-common-go/schema/factory"
-	"github.com/th2-net/th2-demo-script-go.git/th2-common-go/schema/modules/grpcModule"
+	act_grpc "github.com/th2-net/th2-demo-script-go.git/examples/proto"
+
+	"github.com/th2-net/th2-common-go/schema/modules/grpcModule"
+
 	//ac "exactpro/th2/example/proto" //act proto
 	"fmt"
 	"github.com/google/uuid"
 	cg "github.com/th2-net/th2-common-go/proto" //common proto
+	common_f "github.com/th2-net/th2-common-go/schema/factory"
 	//"github.com/th2-net/th2-common-go/schema/factory"
 	//"github.com/th2-net/th2-common-go/schema/modules/grpcModule"
 	"log"
-	"os"
 	"reflect"
 	"time"
 )
 
 func main() {
-	newFactory := factory.NewFactory(os.Args)
+	newFactory := common_f.NewFactory()
 	if err := newFactory.Register(grpcModule.NewGrpcModule); err != nil {
 		panic(err)
 	}
@@ -36,7 +37,7 @@ func main() {
 		log.Fatalf(conErr.Error())
 	}
 	//defer con.Close() //doesnt have that func
-	c := ac.NewActClient(con)
+	c := act_grpc.NewActClient(con)
 
 	// getting data ready for placing order
 
@@ -87,7 +88,7 @@ func main() {
 		Fields: fields,
 	}
 
-	request := cg.PlaceMessageRequest{
+	request := act_grpc.PlaceMessageRequest{
 		Message:       &msg,
 		ParentEventId: &eventID,
 		Description:   "User places an order.",

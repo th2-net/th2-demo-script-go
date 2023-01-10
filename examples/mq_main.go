@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"github.com/th2-net/th2-common-go/schema/modules/mqModule"
-	"github.com/th2-net/th2-common-go/schema/queue/event"
-
 	//conversion "github.com/th2-net/th2-common-go/example/MessageConverter"
 	p_buff "github.com/th2-net/th2-common-go/proto"
 	"github.com/th2-net/th2-common-go/schema/factory"
@@ -53,6 +51,7 @@ func (l listener) OnClose() error {
 
 func main() {
 	newFactory := factory.NewFactory()
+
 	if err := newFactory.Register(mqModule.NewRabbitMQModule); err != nil {
 		panic(err)
 	}
@@ -66,20 +65,21 @@ func main() {
 
 	eventRouter := module.MqEventRouter
 
-	l := confirmationListener{}
-	var ml event.ConformationEventListener = l
-	monitor, err := eventRouter.SubscribeWithManualAck(&ml, "group")
-	if err != nil {
-		log.Println(err)
-	}
-
-	_ = monitor.Unsubscribe()
-	module.Close()
-
-	//fail := eventRouter.SendAll(&p_buff.EventBatch{}, "group")
-	//if fail != nil {
-	//	log.Fatalf("Cannt send, reason : ", fail)
+	//
+	//l := confirmationListener{}
+	//var ml event.ConformationEventListener = l
+	//monitor, err := eventRouter.SubscribeWithManualAck(&ml, "group")
+	//if err != nil {
+	//	log.Println(err)
 	//}
+	//
+	//_ = monitor.Unsubscribe()
 	//module.Close()
+
+	fail := eventRouter.SendAll(&p_buff.EventBatch{}, "group")
+	if fail != nil {
+		log.Fatalf("Cannt send, reason : ", fail)
+	}
+	module.Close()
 
 }

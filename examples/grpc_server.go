@@ -2,14 +2,14 @@ package main
 
 import (
 	"context"
-	ac "exactpro/th2/example/proto"
+	act_grpc "github.com/th2-net/th2-demo-script-go.git/examples/proto"
+
 	"fmt"
 	cg "github.com/th2-net/th2-common-go/proto" //common proto
-	"github.com/th2-net/th2-common-go/schema/factory"
+	common_f "github.com/th2-net/th2-common-go/schema/factory"
 	"github.com/th2-net/th2-common-go/schema/modules/grpcModule"
 	"google.golang.org/grpc"
 	"log"
-	"os"
 	"reflect"
 	"time"
 )
@@ -19,24 +19,24 @@ const (
 )
 
 type server struct {
-	ac.UnimplementedActServer
+	act_grpc.UnimplementedActServer
 }
 
-func (s *server) PlaceOrderFIX(_ context.Context, in *ac.PlaceMessageRequest) (*ac.PlaceMessageResponse, error) {
-	return &ac.PlaceMessageResponse{Status: &cg.RequestStatus{
+func (s *server) PlaceOrderFIX(_ context.Context, in *act_grpc.PlaceMessageRequest) (*act_grpc.PlaceMessageResponse, error) {
+	return &act_grpc.PlaceMessageResponse{Status: &cg.RequestStatus{
 		Message: "the order has been received",
 	},
 		ResponseMessage: in.Message}, nil //return the request content as the response
 }
 
 func registerService(registrar grpc.ServiceRegistrar) {
-	ac.RegisterActServer(registrar, &server{})
+	act_grpc.RegisterActServer(registrar, &server{})
 }
 
 const lifetimeSec = 30
 
 func main() {
-	newFactory := factory.NewFactory(os.Args)
+	newFactory := common_f.NewFactory()
 	if err := newFactory.Register(grpcModule.NewGrpcModule); err != nil {
 		panic(err)
 	}
