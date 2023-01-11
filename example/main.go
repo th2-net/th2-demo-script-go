@@ -1,13 +1,8 @@
-package main
+package example
 
 import (
 	"context"
 	"fmt"
-	"github.com/google/uuid"
-	commonFactory "github.com/th2-net/th2-common-go/schema/factory"
-	"github.com/th2-net/th2-common-go/schema/modules/grpcModule"
-	"github.com/th2-net/th2-common-go/schema/modules/mqModule"
-	"google.golang.org/protobuf/types/known/timestamppb"
 	"log"
 	"math/rand"
 	"reflect"
@@ -16,6 +11,12 @@ import (
 	check1 "th2-grpc/th2_grpc_check1"
 	common_proto "th2-grpc/th2_grpc_common"
 	"time"
+
+	"github.com/google/uuid"
+	commonFactory "github.com/th2-net/th2-common-go/schema/factory"
+	"github.com/th2-net/th2-common-go/schema/modules/grpcModule"
+	"github.com/th2-net/th2-common-go/schema/modules/mqModule"
+	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 func generateRandomClordID(n int) string {
