@@ -2,12 +2,12 @@
   "queues": {
     "estore-pin": {
       "attributes": [
-        "group",
+        "event",
         "publish"
       ],
-      "exchange": "mq_ex",
+      "exchange": "th2-exchange",
       "filters": [],
-      "name": "mq_router",
+      "name": "key[th2-go-playground:script-entry-point:estore-pin]",
       "queue": ""
     }
   }

@@ -188,8 +188,7 @@ func main() {
 	}
 
 	// 12) Call method submitCheckRule from the check1 interface.
-	ctx := context.Background() // maybe need correction
-	check1_response, checkErr := check.SubmitCheckRule(ctx, &check1_request)
+	check1_response, checkErr := check.SubmitCheckRule(context.Background(), &check1_request)
 	if checkErr != nil {
 		log.Fatal(checkErr)
 	}

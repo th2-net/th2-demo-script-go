@@ -6,18 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5da72fc6-c310-41d7-8221-d8abf214a388" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/act/act.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/act/act_grpc.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/check1/check1.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/check1/check1_grpc.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/rabbitmq.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/rabbitmq.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/act_template.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/check1.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/common.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/gen_proto.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
