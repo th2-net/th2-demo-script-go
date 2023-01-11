@@ -43,9 +43,12 @@ func main() {
 	if err := factory.Register(mqModule.NewRabbitMQModule); err != nil {
 		panic(err)
 	}
+	log.Println(factory)
+
 	if err := factory.Register(grpcModule.NewGrpcModule); err != nil {
 		panic(err)
 	}
+	log.Println(factory)
 
 	rabbitModule, err := mqModule.ModuleID.GetModule(factory)
 	if err != nil {
@@ -159,7 +162,7 @@ func main() {
 	// 9) Call method placeOrderFix from the act interface.
 	resp, failed := actCl.PlaceOrderFIX(context.Background(), &request)
 	if failed != nil {
-		log.Fatalf("could not send order: %v", err)
+		log.Fatalf("could not send order: %v", failed)
 	}
 	log.Printf("order sent. response: %s", resp)
 	// 10) Create MessageFilter object - mask or pattern of message verification.
