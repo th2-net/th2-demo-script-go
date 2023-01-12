@@ -13,7 +13,7 @@ require (
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/rs/zerolog v1.28.0 // indirect
 	github.com/streadway/amqp v1.0.0 // indirect
-	github.com/th2-net/th2-common-go v0.0.2-0.20230111003843-62658d92448d // indirect
+	github.com/th2-net/th2-common-go v0.0.2-0.20230112084911-fcb462d0a7c9 // indirect
 	github.com/th2-net/th2-grpc-act-template v0.0.0-20230110173420-aeaf6a247a91 // indirect
 	github.com/th2-net/th2-grpc-check1 v3.5.2-0.20230110170449-a2ea53817c72+incompatible // indirect
 	github.com/th2-net/th2-grpc-common v0.0.0-20230110172250-f653e1acb2db // indirect

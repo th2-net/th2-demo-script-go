@@ -66,13 +66,17 @@ func main() {
 
 	// 2) Initialize grpc router services to work with act and check1 boxes.
 	grpc_router := grpc_module.GrpcRouter
-	con, conErr := grpc_router.GetConnection()
+	actConn, conErr := grpc_router.GetConnection("ActService")
+	if conErr != nil {
+		log.Fatalf(conErr.Error())
+	}
+	checkConn, conErr := grpc_router.GetConnection("Check1Service")
 	if conErr != nil {
 		log.Fatalf(conErr.Error())
 	}
 	//defer con.Close() //doesnt have that func
-	actCl := act.NewActClient(con)
-	check := check1.NewCheck1Client(con)
+	actCl := act.NewActClient(actConn)
+	check := check1.NewCheck1Client(checkConn)
 
 	//# 3) Initialize mq router to work with estore.
 	estore := rabbitModule.MqEventRouter
@@ -84,7 +88,7 @@ func main() {
 
 	eventID := common_proto.EventID{Id: uuid.New().String()}
 	// ClOrdID stored separately for future use.
-	clordid := generateRandomClordID(7)
+	clordid := "8097521"
 	fmt.Println(clordid)
 	eventName := fmt.Sprint("demo-script: send order ", clordid)
 	event := common_proto.Event{
@@ -104,7 +108,7 @@ func main() {
 
 	//// 7) Create the NewOrderSingle Message.
 	
-	secondaryClordid := genrateSecondaryRandomClordID(7)
+	secondaryClordid := "wouiIok"
 	fmt.Println(secondaryClordid)
 
 	tradingPartyFields := map[string]*common_proto.Value{
