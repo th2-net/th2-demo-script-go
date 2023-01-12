@@ -11,32 +11,30 @@ import (
 	"log"
 	"math/rand"
 	"reflect"
-	"strconv"
 	act "th2-grpc/th2_grpc_act_template"
 	check1 "th2-grpc/th2_grpc_check1"
 	common_proto "th2-grpc/th2_grpc_common"
 	"time"
 )
 
-func generateRandomClordID(n int) string {
-	str := ""
-	for i := 0; i < n; i++ {
-		randDigit := rand.Intn(10)
-		str += strconv.Itoa(randDigit)
-	}
-
-	return str
+func StringWithCharset(length int, charset string) string {
+    rand.Seed(time.Now().UnixNano())
+    b := make([]byte, length)
+    for i := range b {
+        b[i] = charset[rand.Intn(len(charset))]
+    }
+    return string(b)
 }
 
-func genrateSecondaryRandomClordID(n int) string {
-	var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-	b := make([]rune, n)
-	for i := range b {
-		b[i] = letters[rand.Intn(len(letters))]
-	}
-	return string(b)
+func generateRandomClordID(length int) string {
+    const charset = "0123456789"
+    return StringWithCharset(length, charset)
 }
 
+func genrateSecondaryRandomClordID(length int) string {
+    const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    return StringWithCharset(length, charset)
+}
 func main() {
 	// 1) Initialize NewFactory instance and register modules for grpc and mq .
 	factory := commonFactory.NewFactory()
@@ -88,7 +86,7 @@ func main() {
 
 	eventID := common_proto.EventID{Id: uuid.New().String()}
 	// ClOrdID stored separately for future use.
-	clordid := "8097521"
+	clordid := generateRandomClordID(7)
 	fmt.Println(clordid)
 	eventName := fmt.Sprint("demo-script: send order ", clordid)
 	event := common_proto.Event{
@@ -108,7 +106,7 @@ func main() {
 
 	//// 7) Create the NewOrderSingle Message.
 	
-	secondaryClordid := "wouiIok"
+	secondaryClordid := genrateSecondaryRandomClordID(7)
 	fmt.Println(secondaryClordid)
 
 	tradingPartyFields := map[string]*common_proto.Value{
@@ -143,8 +141,8 @@ func main() {
 		"OrderCapacity":    {Kind: &common_proto.Value_SimpleValue{SimpleValue: "A"}},
 		"OrderQty":         {Kind: &common_proto.Value_SimpleValue{SimpleValue: "100"}},
 		"Price":            {Kind: &common_proto.Value_SimpleValue{SimpleValue: "10"}},
-		"ClOrdID":          {Kind: &common_proto.Value_SimpleValue{SimpleValue: "123"}}, //random in py
-		"SecondaryClOrdID": {Kind: &common_proto.Value_SimpleValue{SimpleValue: "2"}},   //random in py
+		"ClOrdID":          {Kind: &common_proto.Value_SimpleValue{SimpleValue: clordid}}, //random in py
+		"SecondaryClOrdID": {Kind: &common_proto.Value_SimpleValue{SimpleValue: secondaryClordid}},   //random in py
 		"TransactTime":     {Kind: &common_proto.Value_SimpleValue{SimpleValue: time.Now().Format(time.RFC3339)}},
 		"TradingParty":     {Kind: &common_proto.Value_MessageValue{MessageValue: &common_proto.Message{Fields: tradingPartyFields}}},
 	}
